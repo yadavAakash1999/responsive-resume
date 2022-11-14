@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+
+.main-content{
+    min-height: 1000px;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.left-section{
+    grid-column: span 1;
+    background-color: lightblue;
+
+}
+
+.right-section{
+    grid-column: span 1/ span 2;
+    background-color: lightgrey;
+}
+
+
+.left-content div {
+    padding: 1 rem;
+}
+img{
+    border-radius: 30%;
+      width: 100%;
+    
+  }
+.profile{
+    padding: 1rem;
+}
+.profile-image{
+    /* padding: 5px; */
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+
+.name{
+    font-size: 1.2 rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.8rem;
+    letter-spacing: 0.02px;
+}
+
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill{
+
+}
+.skill-name{
+    text-align: left;
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    padding-bottom: 00.5rem;
+}
+.skills-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: #125688;
+  color: white;
+}
+.fa-github {
+  background: #bdc4c7;
+  color: rgb(12, 2, 2);
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+}
+
+.right-main-content{
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: rgb(31, 3, 3);
+}
+.right-title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+@media screen and (max-width: 674px){
+    .main-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
